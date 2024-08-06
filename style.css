@@ -484,6 +484,13 @@ font-size: 1rem;
 
 
 
+.feature-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 8);
+    transition: ease-in-out 0.3s;
+    border: 1px solid rgb(82, 82, 140);
+}
+
 .feature-info{
     display: flex;
     flex-direction: column;
