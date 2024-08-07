@@ -553,7 +553,7 @@ font-size: 1rem;
 
 @media screen and (max-width: 768px){
     .feature-grid{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         margin-top: 0 2rem;
     }
 }
@@ -579,10 +579,14 @@ font-size: 1rem;
 
 .quicklinks-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
     grid-gap: 2rem;
 }
-
+@media screen and (max-width: 768px){
+    .quicklinks-grid{
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+}
 
 
 
