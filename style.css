@@ -889,7 +889,9 @@ font-size: 1rem;
     margin-bottom: -1.9rem;
 }
 
-
+.footer-link:hover{
+    color: #2563eb;
+}
 
 .filler-text{
     font-size: 1rem;
