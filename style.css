@@ -893,9 +893,10 @@ font-size: 1rem;
     justify-content: center;
     align-items: center;
     gap: 0.8rem;
+    margin-bottom: 0.7rem;
     font-size: 1.28rem;
     font-weight: bold;
-    color: black;
+    Color: #2563eb;;
 }
 
 
