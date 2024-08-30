@@ -25,14 +25,17 @@
 
 
 body{
-    height: 100vhvh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     text-align: center;
-    background-color: var(--background-color);
+    background-color: #f8fafc;
     padding: 0.1rem;
 }
 
-
+.header{
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+}
 
 .header-content{
     max-width: 1280px;
@@ -55,7 +58,9 @@ body{
     gap: 0.625rem;
 }
 
-
+#support-link{
+    color: var(--link-color);
+}
 
 .logo-icon{
     height: 5.875rem;
@@ -65,8 +70,11 @@ body{
 
 
 .logo-text{
-    font-weight: bold;
-    font-size: 1.85rem;
+    /* font-weight: bold;
+    font-size: 1.85rem; */
+    Font-Size: 1.5rem;
+    Font-Weight: 700;
+    Color: #2563eb;
 }
 
 
@@ -93,9 +101,7 @@ body{
     /* transform: 0.1s; */
 }
 
-#about{
-    color: var(--link-color);
-}
+
 
 .nav-link:hover{
     color: var(--link-color);
@@ -156,6 +162,8 @@ body{
     height: 1.5rem;
     width: 1.5rem;
 }
+
+/* navigation ends here */
 
 
 
