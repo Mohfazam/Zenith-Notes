@@ -171,9 +171,12 @@ body {
 
 
 
-/* .main{
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 75vh;
-} */
+}
 
 .branch-header{
     margin-top: 2rem;
@@ -186,9 +189,10 @@ body {
 .branches-grid{
 max-height: 100vh;
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 gap: 1.5rem;
 margin: 1rem 10rem 4rem 10rem;
+margin-bottom: 10rem;
 }
 
 
@@ -220,13 +224,15 @@ margin: 1rem 10rem 4rem 10rem;
 }
 
 
-
-@media (min-width: 768px) {
-    .nav-links {
-        display: none;
+@media (max-width: 768px) {
+    .branches-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr)); /* One column layout */
+        margin: 1rem 10rem 4rem 10rem;
+        margin-bottom: 10rem;
     }
-    .branch-grid {
-        grid-template-rows: repeat(500px, 1fr);
-        margin-bottom: 4rem;
+
+    .main{
+        justify-content: space-between;
+        gap: 2rem;
     }
 }
