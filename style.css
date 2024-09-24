@@ -30,6 +30,7 @@ body{
     text-align: center;
     background-color: #f8fafc;
     padding: 0.1rem;
+    overflow-x: hidden;
 }
 
 .header{
@@ -678,7 +679,7 @@ font-size: 1rem;
 .newsletter-container{
     background-color: var(--background-color);
     max-height: 1280px;
-    
+    margin-bottom: 1.5rem;
     height: 40vh;
 }
 
@@ -844,12 +845,11 @@ font-size: 1rem;
 
 
 
-
-
 .footer-container{
     background-color: var(--background-color);
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
+
     display: flex;
     flex-direction: column;
     max-width: 1280px;
