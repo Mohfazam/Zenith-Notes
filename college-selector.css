@@ -32,6 +32,7 @@ body {
     padding: 0.1rem;
     line-height: 1.6;
     color: #111827;
+    overflow-x: hidden;
 }
 
 .header{
