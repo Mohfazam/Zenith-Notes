@@ -36,6 +36,10 @@ body{
 .header{
     background-color: #ffffff;
     border-bottom: 1px solid #e2e8f0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
 }
 
 .header-content{
