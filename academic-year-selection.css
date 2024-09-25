@@ -171,12 +171,11 @@ body{
   height: 1000px;
 }
 
-
 .select-academic-year {
-  height: 250px;
+  height: 150px;
   width: 100%;
   position: relative;
-  top: 20px;
+  top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
