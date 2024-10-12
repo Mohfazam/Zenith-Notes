@@ -989,75 +989,33 @@ ul{
 
 
 
-/* Responsive Design Enhancements */
-@media screen and (max-width: 768px) {
-    /* Header */
-    .header-content {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center align items */
+
+@media screen and (max-width: 1080px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
     }
 
-    .nav {
-        flex-direction: column; /* Stack navigation links vertically */
-        align-items: center; /* Center align navigation links */
-        padding: 10px 0; /* Add some padding for spacing */
+
+    .footer-top{
+        padding-left: 10rem;
     }
 
-    .nav-link {
-        margin: 5px 0; /* Add space between links */
+
+    .footer-grid{
+        align-self: center;
+        justify-content: space-evenly;
     }
 
-    /* Content */
-    .content-left, .content-right {
-        width: 100%; /* Make content full-width */
-        text-align: center; /* Center align text */
-    }
-
-    .main-section {
-        flex-direction: column; /* Stack left and right content */
-    }
-
-    /* Company Logos */
-    .company-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
-        gap: 10px; /* Space between logos */
-    }
-
-    /* Feature Cards */
-    .feature-grid {
-        grid-template-columns: 1fr; /* Stack feature cards */
-    }
-
-    /* Quick Links */
-    .quicklinks-grid {
-        grid-template-columns: 1fr; /* Stack quick links */
-    }
-
-    /* Newsletter */
-    .newsletter-content {
-        flex-direction: column; /* Stack newsletter content */
-        align-items: center; /* Center align items */
-    }
-
-    .news-left, .news-right {
-        width: 100%; /* Make sections full-width */
-        text-align: center; /* Center align text */
-    }
-
-    /* Footer */
-    .footer-grid {
-        grid-template-columns: 1fr; /* Stack footer columns */
-    }
-
-    /* General Styles */
-    body {
-        padding: 0 10px; /* Add padding to body for better spacing */
-    }
-
-    h1, h2, h3, p {
-        margin: 10px 0; /* Adjust margins for headings and paragraphs */
-    }
 }
+
+
+
+@media screen and (max-width: 850px){
+    .footer-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 
 
     .footer-top{
