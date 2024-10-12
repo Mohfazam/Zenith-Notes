@@ -13,7 +13,9 @@
     --dark-gray: #555;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 *{
     margin: 0;
@@ -987,6 +989,7 @@ ul{
 
 
 
+
 @media screen and (max-width: 1080px){
     .footer{
         flex-direction: column;
@@ -1012,6 +1015,7 @@ ul{
     .footer-grid{
         grid-template-columns: repeat(2, 1fr);
     }
+
 
 
     .footer-top{
