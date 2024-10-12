@@ -22,7 +22,9 @@
     text-decoration: none;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 body{
     height: 100%;
