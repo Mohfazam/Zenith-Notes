@@ -1,140 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #dfdfdf;
-}
-
-.login-box{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 440px;
-    height: 480px;
-    padding: 30px;
-}
-
-
-.login-header{
-    text-align: center;
-    margin: 20px 0 40px 0;
-}
-
-
-.login-header header{
-    color: #333;
-    font-size: 30px;
-    font-weight: 600;
-}
-
-.input-box .input-field{
-    width: 100%;
-    height: 60px;
-    font-size: 17px;
-    padding: 0 25px;
-    margin-bottom: 15px;
-    border-radius: 30px;
-    border: none;
-    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.05);
-    outline: none;
-    transition: .3s;
-}
-
-::placeholder{
-    font-weight: 500;
-    color: #222;
-}
-
-.input-field:focus{
-    width: 105%;
-}
-
-.forgot{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
-section{
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    color: #555;
-}
-
-
-#check{
-    margin-right: 10px;
-}
-
-a{
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
-section a{
-    color: #555;
-}
-
-
-.input-submit{
+.bg-image {
+    background-image: url('https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
     position: relative;
 }
 
-
-.submit-button{
-    width: 100%;
-    height: 60px;
-    background: #222;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: .3s;
-}
-
-
-.input-submit label{
+.bg-image::after {
+    content: '';
     position: absolute;
-    top: 45%;
-    left: 50%;
-    color: #fff;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    cursor: pointer;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(135deg, rgba(79, 172, 254, 0.7) 0%, rgba(0, 242, 254, 0.7) 100%);
 }
 
-
-.submit-button:hover{
-    background: #000;
-    transform: scale(1.05,1);
+.form-container {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
-.sign-up-link{
-    text-align: center;
-    font-size: 15px;
-    margin-top: 20px;
+.custom-input {
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
 }
 
-
-.sign-up-link a{
-    color: #1c1a1a;
-    font-weight: 500;
+.custom-input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+    transform: translateY(-2px);
 }
 
-.sign-up-link a:hover{
-    font-weight: 900;
+.custom-btn {
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.custom-btn:hover {
+    background-color: #3a7bd5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.social-btn {
+    border-radius: 0.75rem;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    background-color: #f1f5f9;
+    transform: translateY(-2px);
+}
+
+.logo-container img {
+    transition: all 0.3s ease;
+}
+
+.logo-container img:hover {
+    transform: scale(1.05);
 }
