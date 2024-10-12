@@ -13,7 +13,9 @@
     --dark-gray: #555;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 *{
     margin: 0;
