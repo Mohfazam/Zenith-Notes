@@ -13,9 +13,7 @@
     --dark-gray: #555;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
 
 *{
     margin: 0;
@@ -1022,4 +1020,8 @@ ul{
         padding-left: 1rem;
     }
 
+}
+
+html {
+    scroll-behavior: smooth;
 }
