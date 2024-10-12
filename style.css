@@ -989,68 +989,75 @@ ul{
 
 
 
-/* Responsive Styles */
-@media (max-width: 1200px) {
-    .company-grid, .feature-grid, .quicklinks-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .newsletter-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 900px) {
-    .company-grid, .feature-grid, .quicklinks-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .newsletter-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
+/* Responsive Design Enhancements */
+@media screen and (max-width: 768px) {
+    /* Header */
     .header-content {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align items */
     }
 
     .nav {
-        flex-direction: column;
-        width: 100%;
-    }
-}
-
-@media (max-width: 600px) {
-    .header-content {
-        align-items: center;
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center; /* Center align navigation links */
+        padding: 10px 0; /* Add some padding for spacing */
     }
 
     .nav-link {
-        padding: 0.5em 0;
+        margin: 5px 0; /* Add space between links */
+    }
+
+    /* Content */
+    .content-left, .content-right {
+        width: 100%; /* Make content full-width */
+        text-align: center; /* Center align text */
     }
 
     .main-section {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stack left and right content */
     }
 
-    .content-right, .content-left {
-        flex: none;
-        width: 100%;
-        text-align: center;
+    /* Company Logos */
+    .company-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
+        gap: 10px; /* Space between logos */
     }
 
-    .feature-grid, .company-grid, .quicklinks-grid {
-        grid-template-columns: 1fr;
+    /* Feature Cards */
+    .feature-grid {
+        grid-template-columns: 1fr; /* Stack feature cards */
     }
 
-    .newsletter-container {
-        flex-direction: column;
+    /* Quick Links */
+    .quicklinks-grid {
+        grid-template-columns: 1fr; /* Stack quick links */
+    }
+
+    /* Newsletter */
+    .newsletter-content {
+        flex-direction: column; /* Stack newsletter content */
+        align-items: center; /* Center align items */
+    }
+
+    .news-left, .news-right {
+        width: 100%; /* Make sections full-width */
+        text-align: center; /* Center align text */
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr; /* Stack footer columns */
+    }
+
+    /* General Styles */
+    body {
+        padding: 0 10px; /* Add padding to body for better spacing */
+    }
+
+    h1, h2, h3, p {
+        margin: 10px 0; /* Adjust margins for headings and paragraphs */
     }
 }
-
 
 
     .footer-top{
