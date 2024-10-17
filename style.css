@@ -55,14 +55,20 @@ body.dark-theme {
 .dark-theme .news-left,
 .dark-theme .newsletter-content,
 .dark-theme .quicklinks-card:hover,
-.dark-theme .company-container{
-    background-color: #1e1e1e;
-    color: #ffffff;
+.dark-theme .company-container,
+.dark-theme .content-left p.section-label,
+.dark-theme .content-left h1.section-title,
+.dark-theme .content-left p.section-description,
+.dark-theme .content-left .login-button,
+.dark-theme .content-left .signup-button {
+    background-color: #1e1e1e; /* Optional: Maintain dark background */
+    color: #ffffff; /* Turn the text white */
 }
 
 .dark-theme a {
     color: #80d0ff;
 }
+
 #theme-toggle {
     background-color: transparent;
     border: none;
