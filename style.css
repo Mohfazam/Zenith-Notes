@@ -43,6 +43,37 @@ body.dark-theme {
     color: #ffffff;
 }
 
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text */
+}
+
+.dark-mode .section-title {
+  color: #ffffff; /* Make the main title text visible in dark mode */
+}
+
+.dark-mode .nav-link, 
+.dark-mode .logo-text, 
+.dark-mode .contact-button {
+  color: #ffffff;
+}
+
+.dark-mode .feature-title, 
+.dark-mode .feature-description {
+  color: #b3b3b3; /* Slightly lighter text for readability */
+}
+
+.dark-mode .footer {
+  background-color: #1a1a1a;
+  color: #b3b3b3;
+}
+
+.dark-mode .menu-button img {
+  filter: invert(1); /* Invert the color of the menu icon in dark mode */
+}
+
+
 .dark-theme .header, 
 .dark-theme .footer-container, 
 .dark-theme .feature-container, 
